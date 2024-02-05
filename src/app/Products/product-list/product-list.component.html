@@ -1,0 +1,39 @@
+<!-- <p class="lead">Product List</p>
+
+<div *ngIf="products; else noProducts">
+  <ul class="list-group">
+    <li *ngFor="let product of products" class="list-group-item">
+      <h5 class="mb-1">Product ID: {{ product.productID }}</h5>
+      <p class="mb-1">Name: {{ product.name }}</p>
+      <p class="mb-1">Type: {{ product.productType }}</p>
+      <p class="mb-1">Unit Price: {{ product.unitPrice }}</p>
+      <p class="mb-1">Description: {{ product.description }}</p>
+      <p class="mb-1">Stockpiled: {{ product.stockpiled }}</p>
+    </li>
+  </ul>
+</div>
+
+<ng-template #noProducts>
+  <p class="alert alert-warning">Sorry, there aren't any products at the moment.</p>
+</ng-template> -->
+
+<p class="lead">Product List</p>
+
+<div *ngIf="products; else noProducts">
+  <ul class="list-group">
+    <li *ngFor="let product of products" class="list-group-item" (click)="onSelectProduct(product)">
+      <h5 class="mb-1">Product ID: {{ product.productID }}</h5>
+      <p class="mb-1">Name: {{ product.name }}</p>
+      <p class="mb-1">Type: {{ product.productType }}</p>
+      <p class="mb-1">Unit Price: {{ product.unitPrice }}</p>
+      <p class="mb-1">Description: {{ product.description }}</p>
+      <p class="mb-1">Stockpiled: {{ product.stockpiled }}</p>
+    </li>
+  </ul>
+</div>
+
+<ng-template #noProducts>
+  <p class="alert alert-warning">Sorry, there aren't any products at the moment.</p>
+</ng-template>
+
+<app-product *ngIf="selectedProduct" [product]="selectedProduct" (closeDetails)="CloseDetails()"></app-product>

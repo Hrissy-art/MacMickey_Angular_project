@@ -1,0 +1,14 @@
+
+<div *ngIf="adresses; else sinon">
+    <ul *ngFor="let address of adresses">
+      <h3>Product ID: {{ address.addressID }} </h3>
+      <li>Street: {{ address.streetLine1 }}</li>
+      <li>: {{ address.streetLine2 }}</li>
+      <li>: {{ address.zipCode }}</li>
+      <li>Phone number: {{ address.phone }}</li>
+      <li>Country ID: {{ address.countryID }}</li>
+      <li>Client ID: {{ address.clientID }}</li>
+    </ul>
+</div>
+  
+<ng-template #sinon> There are any customers to show </ng-template>

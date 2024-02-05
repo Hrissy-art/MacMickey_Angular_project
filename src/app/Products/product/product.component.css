@@ -1,0 +1,57 @@
+/* Style général */
+.product-details-container {
+    max-width: 400px; /* Ajustez la largeur maximale selon vos besoins */
+    margin: auto;
+    padding: 20px;
+    background-color: #f8f9fa; /* Couleur de fond */
+    border: 1px solid #dee2e6; /* Bordure */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  }
+  
+  /* Style du titre */
+  .product-details-container h3 {
+    color: #007bff; /* Couleur du texte */
+    margin-bottom: 10px;
+  }
+  
+  /* Style de la liste */
+  .product-details-container .list-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Style des éléments de la liste */
+  .product-details-container .list-group-item {
+    background-color: #fff; /* Couleur de fond de chaque élément */
+  }
+  
+  /* Style du bouton */
+  .product-details-container .btn {
+    background-color: #28a745; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  /* Hover sur le bouton */
+  .product-details-container .btn:hover {
+    background-color: #218838; /* Couleur de fond au survol */
+  }
+  /* Style général */
+.product-details-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 400px; /* Ajustez la largeur maximale selon vos besoins */
+    margin: auto;
+    padding: 20px;
+    background-color: #f8f9fa; /* Couleur de fond */
+    border: 1px solid #dee2e6; /* Bordure */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  }
+  
+  /* ... Autres styles restent inchangés ... */
+  

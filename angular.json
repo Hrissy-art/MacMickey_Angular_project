@@ -70,7 +70,8 @@
               "buildTarget": "Exam:build:production"
             },
             "development": {
-              "buildTarget": "Exam:build:development"
+              "buildTarget": "Exam:build:development",
+              "proxyConfig": "src/proxy.conf.json" 
             }
           },
           "defaultConfiguration": "development"

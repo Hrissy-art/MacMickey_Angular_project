@@ -1,0 +1,14 @@
+.form-group.row label {
+    font-weight: bold;
+    text-align: right;
+    margin-top: 8px;
+  }
+  
+  /* Style pour les champs de saisie */
+  .form-group.row input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  

@@ -1,0 +1,42 @@
+<div *ngFor="let order of orders">
+    <div>
+      <strong>Order ID:</strong> {{ order.orderID }}
+    </div>
+    <div>
+      <strong>Order State:</strong> {{ order.orderState }}
+    </div>
+    <div>
+      <strong>Creation Date:</strong> {{ order.creationDateTime | date: 'medium' }}
+    </div>
+    <div>
+      <strong>Last Modified Date:</strong> {{ order.lastModifiedDateTime | date: 'medium' }}
+    </div>
+    <div>
+      <strong>Client ID:</strong> {{ order.clientID }}
+    </div>
+  
+    <div *ngIf="order.orderDetails && order.orderDetails.length > 0">
+      <h4>Order Details:</h4>
+      <div *ngFor="let detail of order.orderDetails">
+        <div>
+          <strong>Detail ID:</strong> {{ detail.orderDetailID }}
+        </div>
+        <div>
+          <strong>Quantity:</strong> {{ detail.quantity }}
+        </div>
+        <div>
+          <strong>Unit Price:</strong> {{ detail.unitPrice | currency }}
+        </div>
+        <div>
+          <strong>Product ID:</strong> {{ detail.productID }}
+        </div>
+        <div>
+          <strong>Order ID:</strong> {{ detail.orderID }}
+        </div>
+        <hr />
+      </div>
+    </div>
+  
+    <hr />
+  </div>
+  

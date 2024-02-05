@@ -1,0 +1,14 @@
+<p>product works!</p>
+
+<div *ngIf="product" class=product-details-container>
+    <h3>Product Details</h3>
+    <ul class="list-group">
+      <li class="list-group-item">Product ID: {{ product.productID }}</li>
+      <li class="list-group-item">Name: {{ product.name }}</li>
+      <li class="list-group-item">Type: {{ product.productType }}</li>
+      <li class="list-group-item">Unit Price: {{ product.unitPrice }}</li>
+      <li class="list-group-item">Description: {{ product.description }}</li>
+      <li class="list-group-item">Stockpiled: {{ product.stockpiled }}</li>
+    </ul>
+    <button class="btn btn-secondary mt-2" (click)="CloseDetails()">Close Details</button>
+  </div>
