@@ -1,0 +1,30 @@
+
+p.lead {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .list-group {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .list-group-item {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .list-group-item:hover {
+    background-color: #e9ecef;
+  }
+  
+  .alert-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
